@@ -1,0 +1,566 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lilyerma.github.io/de-blog/posts/rule-formulations-rulespeak/">
+      
+      
+        <link rel="prev" href="../data-warehouse-vs-database/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/fleur-de-lis-fav.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Как формулировать бизнес правила - DE Блог Лили</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="DE Блог Лили" class="md-header__button md-logo" aria-label="DE Блог Лили" data-md-component="logo">
+      
+  <img src="../../assets/images/fleur-de-lis.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DE Блог Лили
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Как формулировать бизнес правила
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DE Блог Лили" class="md-nav__button md-logo" aria-label="DE Блог Лили" data-md-component="logo">
+      
+  <img src="../../assets/images/fleur-de-lis.svg" alt="logo">
+
+    </a>
+    DE Блог Лили
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dwh-architecture-inmon-kimball-star-snowflake/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Про Кимбала, Инмона, Снежинки и Звездочки
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../correlated-subqueries-when-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Про коррелированные подзапросы
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links-to-easy-to-understand-videos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL про оптимизацию (fun)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-warehouse-vs-database/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    База данных или хранилище
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как формулировать бизнес правила
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Как формулировать бизнес правила</h1>
+
+<blockquote>
+<p><strong>Справочная информация (RuleSpeak):</strong></p>
+<ul>
+<li>
+<p>Хорошее бизнес-правило содержит глагол <strong>ДОЛЖНО</strong> (или <em>не должно</em>, <em>может</em>), а также наречия <em>ВСЕГДА</em>, <em>НИКОГДА</em>, <em>ТОЛЬКО</em>.</p>
+</li>
+<li>
+<p>Оно обязательно включает в себя <strong>субъект</strong> (кто/что) и <strong>объект</strong> (кого/что).</p>
+</li>
+<li>
+<p>Чем меньше правил, тем лучше, но они должны однозначно определять поведение системы в различных ситуациях.</p>
+</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Категория правила / Тип</th>
+<th style="text-align: left;">Шаблон формулировки</th>
+<th style="text-align: left;">Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1.0 Правила, обозначающие требования</strong></td>
+<td style="text-align: left;"><strong>… должен(-а) …</strong></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1.1.1 Безусловное требование</td>
+<td style="text-align: left;">… должен(-а) …</td>
+<td style="text-align: left;">Диск должен иметь тип<br>ВМ должна иметь статус<br>Письмо о прогнозе превышения бюджета должно отправляться один раз в день</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.1.2 Требование по условию (с «если»)</td>
+<td style="text-align: left;">… должен(-а) …, если</td>
+<td style="text-align: left;">Пользователь должен видеть страницу <strong>План</strong>, если есть активная подписка<br>Пользователь должен видеть новый тип диска в <strong>Таблице ресурсов</strong>, если подключил новый тип диска в своем облаке.</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.1.3 Требование по условию (без «если»)</td>
+<td style="text-align: left;">… должен(-а) …</td>
+<td style="text-align: left;">В 00:00 UTC сумма затрат за день должна быть сохранена одним числом (финализирована)<br>Пользователь должен быть в роли <em>Администратор</em>, чтобы видеть Отчеты</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1.2 Расчетные правила</strong></td>
+<td style="text-align: left;"><strong>… считается, как …</strong></td>
+<td style="text-align: left;">Общая сумма оптимизации считается, как сумма оптимизаций по каждому подключению.<br>Сумма оптимизации по подключению считается, как сумма только известных значений оптимизации всех типов в этом подключении.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1.3 Правила вывода состояний</strong></td>
+<td style="text-align: left;"><strong>… считается…, когда…</strong></td>
+<td style="text-align: left;">Бюджет считается превышен, когда сумма затрат превышает установленный лимит<br>Инфраструктура считается неоптимизированной, когда число рекомендаций больше нуля<br>Диск считается забытым, когда он не был прикреплен к ВМ больше 14 дней</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2.0 Правила, обозначающие запреты</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2.1 Безусловный запрет</td>
+<td style="text-align: left;">… не должно …</td>
+<td style="text-align: left;">Имена облаков в одном кастомере не должны совпадать</td>
+</tr>
+<tr>
+<td style="text-align: left;">2.2 Запрет по условию (с «если»)</td>
+<td style="text-align: left;">… не должно …, если</td>
+<td style="text-align: left;">Система не должна создавать заявку на увеличение подписки, если запрошенный лимит больше размера доступных свободных ресурсов</td>
+</tr>
+<tr>
+<td style="text-align: left;">2.3 Запрет по условию (без «если»)</td>
+<td style="text-align: left;">… не должно …</td>
+<td style="text-align: left;">Прототипы не должны быть видны пользователю</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3.0 Правила условного разрешения</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3.1 Разрешение (с «только если»)</td>
+<td style="text-align: left;">… может …, только если</td>
+<td style="text-align: left;">Пользователь может увидеть прототип, только если менеджер включил его в менеджерской панели</td>
+</tr>
+<tr>
+<td style="text-align: left;">3.2 Разрешение (без «только если»)</td>
+<td style="text-align: left;">… может … только</td>
+<td style="text-align: left;">Пользователь в роли <em>Владелец</em> может видеть только свои подписки</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4.0 Утверждения о разрешениях</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4.1 Безусловное разрешение</td>
+<td style="text-align: left;">… может …</td>
+<td style="text-align: left;">Пользователь может видеть главный дашборд</td>
+</tr>
+<tr>
+<td style="text-align: left;">4.2 Разрешение с условиями (без «если»)</td>
+<td style="text-align: left;">… может …</td>
+<td style="text-align: left;">Менеджер может включить отображение прототипа в кастомере</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5.0 Утверждения об отсутствии требований</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">5.1 Безусловное отсутствие требования</td>
+<td style="text-align: left;">… может не …</td>
+<td style="text-align: left;">Пользователь может не вносить цены на ресурсы подключения</td>
+</tr>
+<tr>
+<td style="text-align: left;">5.2 Отсутствие требования с условием (с «если»)</td>
+<td style="text-align: left;">… может не …, если</td>
+<td style="text-align: left;">Глобальный администратор может не делать выбор облака или хоста в заявке, если <em>Владелец</em> указал облако или хост в заявке.</td>
+</tr>
+<tr>
+<td style="text-align: left;">5.3 Отсутствие требования по условию (без «если»)</td>
+<td style="text-align: left;">… может не …</td>
+<td style="text-align: left;">Глобальный администратор может не согласовывать заявки</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
