@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lilyerma.github.io/de-blog/</loc>
-         <lastmod>2026-10-16</lastmod>
+         <lastmod>2026-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://lilyerma.github.io/de-blog/posts/ThreadPoolExecutor-vs-asyncio/</loc>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://lilyerma.github.io/de-blog/posts/correlated-subqueries-when-to-use/</loc>
-         <lastmod>2026-10-16</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://lilyerma.github.io/de-blog/posts/data-warehouse-vs-database/</loc>
-         <lastmod>2026-10-16</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://lilyerma.github.io/de-blog/posts/dwh-architecture-inmon-kimball-star-snowflake/</loc>
-         <lastmod>2026-10-16</lastmod>
+         <lastmod>2026-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://lilyerma.github.io/de-blog/posts/gaps_islands_pattern/</loc>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://lilyerma.github.io/de-blog/posts/links-to-easy-to-understand-videos/</loc>
-         <lastmod>2026-10-16</lastmod>
+         <lastmod>2026-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://lilyerma.github.io/de-blog/posts/postgresql_best_practices/</loc>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://lilyerma.github.io/de-blog/posts/rule-formulations-rulespeak/</loc>
-         <lastmod>2026-10-16</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
 </urlset>
